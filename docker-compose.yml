@@ -21,13 +21,13 @@ services:
   mc:
     image: itzg/minecraft-server
     environment:
-      EULA: "true"
+      EULA: "TRUE"
       MOD_PLATFORM: AUTO_CURSEFORGE
       # allocate from https://console.curseforge.com/ and set in .env file
       labels: "lazymc.group=mc"
       CF_API_KEY: $$2a$$10$$HEAechUdlU4vqVdmk/IvjO35WAkCfjfr8mGybCrRhRuP0m4aRPIee
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/prominence-2-rpg
-      CF_FILENAME_MATCHER: "2.8.7"
+      CF_FILENAME_MATCHER: "3.0.5h"
       MEMORY: 64G
       restart: no
     volumes:
